@@ -194,3 +194,9 @@ The app implements two-level caching:
 
 ---
 
+![Screenshot](https://github.com/BaYa06/mobile_test/blob/main/assets/Снимок%20экрана%202025-04-29%20в%2012.36.43.png)
+![Screenshot](https://github.com/BaYa06/mobile_test/blob/main/assets/Снимок%20экрана%202025-04-29%20в%2012.36.32.png)
+![Screenshot](https://github.com/BaYa06/mobile_test/blob/main/assets/Снимок%20экрана%202025-04-29%20в%2012.35.23.png)
+![Screenshot](https://github.com/BaYa06/mobile_test/blob/main/assets/Снимок%20экрана%202025-04-29%20в%2012.35.13.png)
+![Screenshot](https://github.com/BaYa06/mobile_test/blob/main/assets/Снимок%20экрана%202025-04-29%20в%2012.35.02.png)
+![Screenshot](https://github.com/BaYa06/mobile_test/blob/main/assets/Снимок%20экрана%202025-04-29%20в%2012.34.55.png)
