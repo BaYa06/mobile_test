@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.schedule"
-    compileSdk = flutter.compileSdkVersion.toInt()
+    compileSdk = flutter.compileSdkVersion.toInteger()
     ndkVersion = "27.0.12077973"
 
     compileOptions {
@@ -20,9 +20,9 @@ android {
 
     defaultConfig {
         applicationId = "com.example.schedule"
-        minSdk = flutter.minSdkVersion.toInt()
-        targetSdk = flutter.targetSdkVersion.toInt()
-        versionCode = flutter.versionCode.toInt()
+        minSdk = flutter.minSdkVersion.toInteger()
+        targetSdk = flutter.targetSdkVersion.toInteger()
+        versionCode = flutter.versionCode.toInteger()
         versionName = flutter.versionName
     }
 
@@ -31,7 +31,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             isMinifyEnabled = true
             isShrinkResources = true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
         }
         debug {
             signingConfig = signingConfigs.getByName("debug")
