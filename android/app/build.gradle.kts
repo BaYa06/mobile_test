@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.schedule"
-    compileSdk = flutter.compileSdkVersion.toInteger()
+    compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
     compileOptions {
@@ -20,9 +20,9 @@ android {
 
     defaultConfig {
         applicationId = "com.example.schedule"
-        minSdk = flutter.minSdkVersion.toInteger()
-        targetSdk = flutter.targetSdkVersion.toInteger()
-        versionCode = flutter.versionCode.toInteger()
+        minSdk = flutter.minSdkVersion
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode.toInt()
         versionName = flutter.versionName
     }
 

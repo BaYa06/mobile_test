@@ -1,0 +1,2 @@
+-keep class com.example.schedule.** { *; }
+-dontwarn com.example.schedule.**
