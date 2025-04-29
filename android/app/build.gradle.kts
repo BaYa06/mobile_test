@@ -26,17 +26,29 @@ android {
         versionName = flutter.versionName
     }
 
-    // buildTypes {
-    //     release {
-    //         signingConfig = signingConfigs.getByName("debug")
-    //         isMinifyEnabled = true
-    //         isShrinkResources = true
-    //         proguardFiles("proguard-android-optimize.txt", "proguard-rules.pro")
-    //     }
-    //     debug {
-    //         signingConfig = signingConfigs.getByName("debug")
-    //     }
-    // }
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+            signingConfig = signingConfigs.getByName("debug") // или настройте свой release ключ
+        }
+        debug {
+            signingConfig = signingConfigs.getByName("debug")
+        }
+    }
+
+    android.applicationVariants.all {
+        outputs.all {
+            val outputImpl = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+            outputImpl.outputFileName = "app-${buildType.name}.apk"
+        }
+    }
+
+
 }
 
 flutter {
